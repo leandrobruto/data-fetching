@@ -5,7 +5,7 @@ import { Repository } from "./Repos";
 export function Repo() {
     const params = useParams();
     const currentRepository = params['*'] as string;
-console.log(currentRepository);
+    
     const queryClient = useQueryClient();
 
     async function handleChangeRepositoryDescription() {
